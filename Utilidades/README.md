@@ -7,6 +7,7 @@
 ```
 >La API utiliza PM2 que es un manejador de proyectos de NodeJS.
 
+[PM2 Documentación](http://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/)
 
 ## 2. Obtener cambios realizados en el proyecto
 
