@@ -9,6 +9,30 @@
 
 [PM2 Documentación](http://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/)
 
+### 1.1 ¿Cómo conectarse por SSH?
+Podemos conectarnos por Putty o por el SSH integrado que tiene Git Bash, realizaremos el ejemplo con este último.
+
+*   Abrimos un terminarl de Git Bash *(no importa de que directorio se abre el Git Bash)*
+
+![](./bash.png)
+*   Nos conectamos mediante SSH al servidor 192.168.70.13 con el siguiente comando:
+```
+ssh root@192.168.70.13
+```
+![](./ssh.png)
+
+>En este caso estamos usando la IP privada, porque estamos conectados en la misma red que el servidor, caso contrario solicitar la IP pública al responsable de turno.
+
+* Ingresamos la clave que nos solicita, de no tener la clave contactarse con el responsable de turno. 
+
+![](./password.png)
+
+* De ser la clave correcta nos aparece la fecha y hora de la última conexión y ya podemos ejecutar comando en el servidor. 
+
+![](./connect.png)
+
+> De ser la primera vez que se conecta le pedirá una confirmación solo escribir **yes** y darle enter.
+
 ## 2. Obtener cambios realizados en el proyecto
 
 Cada vez que desarrollamos sobre el proyecto, los cambios lo subimos al repositorio remoto(GitLab), necesitamos obtener esos cambios en el servidor **192.168.70.13**, para lo cuál necesitamos ingresar al proyecto y obtener los cambios con el comando ```git pull```, el cual pedirá las credenciales de la cuenta de *GitLab* para descargar los cambios. 
